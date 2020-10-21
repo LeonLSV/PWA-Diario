@@ -118,7 +118,7 @@ function checkValidServiceWorker(swUrl, config) {
     });
 }
 
-// workbox.routing.registerNavigationRoute("/");
+workbox.routing.registerNavigationRoute("/");
 
 export function unregister() {
   if ("serviceWorker" in navigator) {
