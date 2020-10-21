@@ -1,5 +1,3 @@
-import { workbox } from "workbox-sw";
-
 const isLocalhost = Boolean(
   window.location.hostname === "localhost" ||
     // [::1] is the IPv6 localhost address.
@@ -117,8 +115,6 @@ function checkValidServiceWorker(swUrl, config) {
       );
     });
 }
-
-workbox.routing.registerNavigationRoute("/");
 
 export function unregister() {
   if ("serviceWorker" in navigator) {
